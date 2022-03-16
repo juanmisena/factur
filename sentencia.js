@@ -138,3 +138,131 @@
 // } else {
 //     document.write('El maximo de las notas es de 1 a 10');
 // }
+
+//Ejercicio 9
+// let x1, x2;
+// alert('Este programa resuelve ecuaciones de segundo grado');
+// alert('ax^2 + bx + c = 0');
+// alert('Por favor, introduzca los valores');
+// let a = parseFloat(prompt('a = '));//-4
+// let b = parseFloat(prompt('b = '));//6
+// let c = parseFloat(prompt('c = '));//8
+// // 0x^2 + 0x + 0 = 0
+// if ((a == 0) && (b == 0) && (c != 0)) {
+//     document.write('La ecuación no tiene solución');
+// }
+// // ax^2 + bx + 0 = 0  con a y b distintos de 0
+// if ((a != 0) && (b != 0) && (c == 0)) {
+//     document.write('x1 = 0');
+//     document.write('x2 = '+ (-b / a));
+// }
+// // 0x^2 + bx + c = 0  con b y c distintos de 0
+// if ((a == 0) && (b != 0) && (c != 0)) {
+//     document.write('x1 = x2 = '+ (-c / a));
+// }
+// // ax^2 + bx + c = 0  con a, b y c distintos de 0
+// if ((a != 0) && (b != 0) && (c != 0)) {
+//     let discriminante = Math.pow(b,2) - (4 * a * c);
+//     if (discriminante < 0) {
+//         document.write('La ecuación no tiene soluciones reales');
+//     } else {
+//         document.write('x1 = ' + (-b + Math.sqrt(discriminante))/(2 * a) + '<br>');
+//         document.write('x2 = ' + (-b - Math.sqrt(discriminante))/(2 * a) + '<br>');
+//     }
+// }
+
+//Ejercicio 10
+// alert('Este programa le dirá cuál es su horóscopo a partir de su fecha de nacimiento');
+// let horoscopo = '';
+// let mes = parseInt(prompt('Introduzca el número del mes en que nació (1-12): '));
+// let dia = parseInt(prompt('Ahora introduzca el día: '));
+// switch (mes) {
+//     case 1:
+//         if (dia < 21) {
+//             horoscopo = 'capricornio';
+//         } else {
+//             horoscopo = 'acuario';
+//         }
+//         break;
+//     case 2:
+//         if (dia < 20) {
+//             horoscopo = 'acuario';
+//         } else {
+//             horoscopo = 'picis';
+//         }
+//         break;
+//     case 3:
+//         if (dia < 21) {
+//             horoscopo = 'picis';
+//         } else {
+//             horoscopo = 'aries';
+//         }
+//         break;
+//     case 4:
+//         if (dia < 21) {
+//             horoscopo = 'aries';
+//         } else {
+//             horoscopo = 'tauro';
+//         }
+//         break;
+//     case 5:
+//         if (dia < 20) {
+//             horoscopo = 'tauro';
+//         } else {
+//             horoscopo = 'géminis';
+//         }
+//         break;
+//     case 6:
+//         if (dia < 22) {
+//             horoscopo = 'géminis';
+//         } else {
+//             horoscopo = 'cáncer';
+//         }
+//         break;
+//     case 7:
+//         if (dia < 22) {
+//             horoscopo = 'cáncer';
+//         } else {
+//             horoscopo = 'leo';
+//         }
+//         break;
+//     case 8:
+//         if (dia < 24) {
+//             horoscopo = 'leo';
+//         } else {
+//             horoscopo = 'virgo';
+//         }
+//         break;
+//     case 9:
+//         if (dia < 23) {
+//             horoscopo = 'virgo';
+//         } else {
+//             horoscopo = 'libra';
+//         }
+//         break;
+//     case 10:
+//         if (dia < 23) {
+//             horoscopo = 'libra';
+//         } else {
+//             horoscopo = 'escorpio';
+//         }
+//         break;
+//     case 11:
+//         if (dia < 23) {
+//             horoscopo = 'escorpio';
+//         } else {
+//             horoscopo = 'sagitario';
+//         }
+//         break;
+//     case 12:
+//         if (dia < 21) {
+//             horoscopo = 'sagitario';
+//         } else {
+//             horoscopo = 'capricornio';
+//         }
+//         break;
+//     default:
+//         document.write('el rango de fechas es de 1 a 12<br><br>');
+//         break;
+// }
+// (mes > 12) ? document.write('la fecha ingresada no corresponde al horóscopo<br><br>') : document.write('Su horóscopo es ' + horoscopo);
