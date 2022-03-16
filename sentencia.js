@@ -86,3 +86,15 @@
 //     sueldoSemanal = (40 * 12) + ((horasTrabajadas - 40) * 16);
 // }
 // document.write('El sueldo semanal que le corresponde es de ' + sueldoSemanal + ' euros');
+
+//Ejercicio 5
+// alert('Este programa resuelve ecuaciones de primer grado del tipo ax + b = 0');
+// let a = parseFloat(prompt('Por favor, introduzca el valor de a: '));
+// let b = parseFloat(prompt('Ahora introduzca el valor de b: '));
+// if (a == 0) {
+//     document.write('Esa ecuación no tiene solución real');
+// } else {
+//     document.write('x =' + (-b/a));
+// }
+
+//Ejercicio 6
