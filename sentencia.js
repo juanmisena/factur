@@ -98,3 +98,43 @@
 // }
 
 //Ejercicio 6
+// alert('Cálculo del tiempo de caída de un objeto');
+// let h = parseFloat(prompt('Por favor, introduzca la altura (en metros) desde la que cae el objeto: '));
+// const g = 9.81;// las constantes se declaran con final
+// let s = Math.sqrt(2*h/g);
+// document.write('El objeto tarda %.2f segundos en caer.\n', s);
+
+//Ejercicio 7
+// alert('Este programa calcula la media de tres notas');
+// let nota1 = parseFloat(prompt('Por favor, introduzca la primera nota: '));
+// let nota2 = parseFloat(prompt('Ahora introduzca la segunda nota: '));
+// let nota3 = parseFloat(prompt('Por último introduzca la tercera nota: '));
+// let media = (nota1 + nota2 + nota3) / 3;
+// document.write('La media es %.2f\n', media);
+
+//Ejercicio 8
+// alert('Este programa calcula la media de tres notas');
+// let nota1 = parseFloat(prompt('Por favor, introduzca la primera nota: '));
+// let nota2 = parseFloat(prompt('Ahora introduzca la segunda nota: '));
+// let nota3 = parseFloat(prompt('Por último introduzca la tercera nota: '));
+// if (((nota1 > 0) && (nota1 <= 10)) || ((nota2 > 0) && (nota2 <= 10)) || ((nota3 > 0) && (nota3 <= 10))) {
+//     let media = (nota1 + nota2 + nota3) / 3;
+//     document.write('La media es %.2f\n', media, ' ');
+//     if (media < 5) {
+//         document.write('Insuficiente');
+//     }
+//     if ((media >= 5) && (media < 6)) {
+//         document.write('Suficiente');
+//     }
+//     if ((media >= 6) && (media < 7)) {
+//         document.write('Bien');
+//     }
+//     if ((media >= 7) && (media < 9)) {
+//         document.write('Notable');
+//     }
+//     if (media >= 9) {
+//         document.write('Sobresaliente');
+//     }
+// } else {
+//     document.write('El maximo de las notas es de 1 a 10');
+// }
