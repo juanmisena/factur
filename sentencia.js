@@ -397,60 +397,60 @@
 // }
 
 //Ejercicio 16
-let respuesta = '';
-let puntos = 0;
-alert('TEST DE FIDELIDAD');
-alert('Este programa te dirá si hay probabilidad de que tu pareja está siendo infiel.\n');
-respuesta = prompt('1. Tu pareja parece estar más inquieta de lo normal sin ningún motivo aparente.\n(v)erdadero o (f)also: ');
-if (respuesta == 'v') {
-    puntos += 3;
-}
-respuesta = prompt('2. Ha aumentado sus gastos de vestuario.\n(v)erdadero o (f)also: ');
-if (respuesta == 'v') {
-    puntos += 3;
-}
-respuesta = prompt('3. Ha perdido el interés que mostraba anteriormente por ti.\n(v)erdadero o (f)also: ');
-if (respuesta == 'v') {
-    puntos += 3;
-}
-respuesta = prompt('4. Ahora se afeita y se asea con más frecuencia (si es hombre) o ahora se arregla el pelo y se asea con más frecuencia (si es mujer).\n(v)erdadero o (f)also: ');
-if (respuesta == 'v') {
-    puntos += 3;
-}
-respuesta = prompt('5. No te deja que mires la agenda de su teléfono móvil.\n(v)erdadero o (f)also: ');
-if (respuesta == 'v') {
-    puntos += 3;
-}
-respuesta = prompt('6. A veces tiene llamadas que dice no querer contestar cuando estás tú delante.\n(v)erdadero o (f)also: ');
-if (respuesta == 'v') {
-    puntos += 3;
-}
-respuesta = prompt('7. Últimamente se preocupa más en cuidar la línea y/o estar bronceado/a.\n(v)erdadero o (f)also: ');
-if (respuesta == 'v') {
-    puntos += 3;
-}
-respuesta = prompt('8. Muchos días viene tarde después de trabajar porque dice tener mucho más trabajo.\n(v)erdadero o (f)also: ');
-if (respuesta == 'v') {
-    puntos += 3;
-}
-respuesta = prompt('9. Has notado que últimamente se perfuma más.\n(v)erdadero o (f)also: ');
-if (respuesta == 'v') {
-    puntos += 3;
-}
-respuesta = prompt('10. Se confunde y te dice que ha estado en sitios donde no ha ido contigo.\n(v)erdadero o (f)also: ');
-if (respuesta == 'v') {
-    puntos += 3;
-}
-if ((respuesta != 'v') || (respuesta != 'f')) {
-    document.write('debes de responder con (v) si es verdadero o (f) si es falso');
-}
-// Muestra el resultado del test
-if (puntos <= 10) {
-    document.write('¡Enhorabuena! tu pareja parece ser totalmente fiel');
-}
-if ((puntos > 11) && (puntos <= 22)) {
-    document.write('Quizás exista el peligro de otra persona en su vida o en su mente, aunque seguramente será algo sin importancia. No bajes la guardia');
-}
-if (puntos >= 22) {
-    document.write('Tu pareja tiene todos los ingredientes para estar viviendo un romance con otra persona. Te aconsejamos que indagues un poco más y averigües qué es lo que está pasando por su cabeza');
-}
+// let respuesta = '';
+// let puntos = 0;
+// alert('TEST DE FIDELIDAD');
+// alert('Este programa te dirá si hay probabilidad de que tu pareja está siendo infiel.\n');
+// respuesta = prompt('1. Tu pareja parece estar más inquieta de lo normal sin ningún motivo aparente.\n(v)erdadero o (f)also: ');
+// if (respuesta == 'v') {
+//     puntos += 3;
+// }
+// respuesta = prompt('2. Ha aumentado sus gastos de vestuario.\n(v)erdadero o (f)also: ');
+// if (respuesta == 'v') {
+//     puntos += 3;
+// }
+// respuesta = prompt('3. Ha perdido el interés que mostraba anteriormente por ti.\n(v)erdadero o (f)also: ');
+// if (respuesta == 'v') {
+//     puntos += 3;
+// }
+// respuesta = prompt('4. Ahora se afeita y se asea con más frecuencia (si es hombre) o ahora se arregla el pelo y se asea con más frecuencia (si es mujer).\n(v)erdadero o (f)also: ');
+// if (respuesta == 'v') {
+//     puntos += 3;
+// }
+// respuesta = prompt('5. No te deja que mires la agenda de su teléfono móvil.\n(v)erdadero o (f)also: ');
+// if (respuesta == 'v') {
+//     puntos += 3;
+// }
+// respuesta = prompt('6. A veces tiene llamadas que dice no querer contestar cuando estás tú delante.\n(v)erdadero o (f)also: ');
+// if (respuesta == 'v') {
+//     puntos += 3;
+// }
+// respuesta = prompt('7. Últimamente se preocupa más en cuidar la línea y/o estar bronceado/a.\n(v)erdadero o (f)also: ');
+// if (respuesta == 'v') {
+//     puntos += 3;
+// }
+// respuesta = prompt('8. Muchos días viene tarde después de trabajar porque dice tener mucho más trabajo.\n(v)erdadero o (f)also: ');
+// if (respuesta == 'v') {
+//     puntos += 3;
+// }
+// respuesta = prompt('9. Has notado que últimamente se perfuma más.\n(v)erdadero o (f)also: ');
+// if (respuesta == 'v') {
+//     puntos += 3;
+// }
+// respuesta = prompt('10. Se confunde y te dice que ha estado en sitios donde no ha ido contigo.\n(v)erdadero o (f)also: ');
+// if (respuesta == 'v') {
+//     puntos += 3;
+// }
+// // Muestra el resultado del test
+// if ((puntos > 0) && (puntos <= 10)) {
+//     document.write('¡Enhorabuena! tu pareja parece ser totalmente fiel');
+// }
+// if ((puntos > 11) && (puntos <= 22)) {
+//     document.write('Quizás exista el peligro de otra persona en su vida o en su mente, aunque seguramente será algo sin importancia. No bajes la guardia');
+// }
+// if (puntos >= 22) {
+//     document.write('Tu pareja tiene todos los ingredientes para estar viviendo un romance con otra persona. Te aconsejamos que indagues un poco más y averigües qué es lo que está pasando por su cabeza');
+// }
+// if ((respuesta != 'v') || (respuesta != 'f') || (puntos == 0)) {
+//     document.write('debes de responder con (v) si es verdadero o (f) si es falso');
+// }
