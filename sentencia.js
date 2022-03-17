@@ -454,3 +454,134 @@
 // if ((respuesta != 'v') || (respuesta != 'f') || (puntos == 0)) {
 //     document.write('debes de responder con (v) si es verdadero o (f) si es falso');
 // }
+
+//Ejercicio 17
+// let n = parseInt(prompt('Por favor, introduzca un número entero: '));
+// if ((n < 0) || (n == 0)) {
+//     document.write('por favor introduce un numero entero');
+// } else {
+//     document.write('La última cifra del número introducido es el ' + (n % 10));
+// }
+
+//Ejercicio 18
+// let n = 0, primera = 0;
+// n = parseInt(prompt('Por favor, introduzca un número entero (de 5 cifras como máximo): '));
+// if (n < 10) {
+//     primera = n;
+// }
+// if ((n >= 10) && (n <= 99)) {
+//     primera = Math.floor(n / 10); //1 digito
+// }
+// if ((n >= 100) && (n <= 999)) {
+//     primera = Math.floor(n / 100); //2 digito
+// }
+// if ((n >= 1000) && (n <= 9999)) {
+//     primera = Math.floor(n / 1000); //3 digito
+// }
+// if ((n >= 10000) && (n <= 99999)) {
+//     primera = Math.floor(n / 10000); //4 digito
+// }
+// document.write('La primera cifra del número introducido es el ' + primera);
+
+//Ejercicio 19
+// let n = 0, digitos = 0;
+// n = Math.abs(parseInt(prompt('Por favor, introduzca un número entero (de 5 cifras como máximo): ')));
+// if (n < 10) {
+//     digitos = 1;
+// }
+// if ((n >= 10) && (n <= 99)) {
+//     digitos = 2;
+// }
+// if ((n >= 100) && (n <= 999)) {
+//     digitos = 3;
+// }
+// if ((n >= 1000) && (n <= 9999)) {
+//     digitos = 4;
+// }
+// if ((n >= 10000) && (n <= 99999)) {
+//     digitos = 5;
+// }
+// if (n > 99999) {
+//     digitos = Infinity;
+// }
+// document.write('El número introducido tiene ' + digitos + ' digitos');
+
+//Ejercicio 20
+// let n, capicua = false;
+// n = parseInt(prompt('Por favor, introduzca un número entero (de 5 cifras como máximo): '));
+// // número de una cifra
+// if ((n >= 1) && (n <= 9)) {
+//     capicua = true;
+// }
+// // número de dos cifras
+// if ((n >= 10) && (n <= 99)) {
+//     if ((Math.floor(n / 10)) == (n % 10)) {
+//         capicua = true;
+//     }
+// }
+// // número de tres cifras
+// if ((n >= 100) && (n <= 999)) {
+//     if ((Math.floor(n / 100)) == (n % 10)) {
+//         capicua = true;
+//     }
+// }
+// // número de cuatro cifras
+// if ((n >= 1000) && (n <= 9999)) {
+//     if (((Math.floor(n / 1000)) == (n % 10)) && ((Math.floor(n / 100) % 10)) == (Math.floor(n / 10) % 10)) {
+//         capicua = true;
+//     }
+// }
+// // número de cinco cifras
+// if ((n >= 10000) && (n <= 99999)) {
+//     if (((Math.floor(n / 10000)) == (n % 10)) && ((Math.floor(n / 1000) % 10)) == (Math.floor(n / 10) % 10)) {
+//         capicua = true;
+//     }
+// }
+// if (capicua) {
+//     document.write('El número introducido es capicúa');
+// } else {
+//     document.write('El número introducido no es capicúa');
+// }
+
+//Ejercicio 21
+// let nota1 = parseFloat(prompt('Nota del primer control: '));
+// let nota2 = parseFloat(prompt('Nota del segundo control: '));
+// let media = (nota1 + nota2) / 2;
+// if (media < 5) {
+//     if (window.confirm('¿Cuál ha sido el resultado de la recuperación? (apto/no apto): ') == true) {
+//         media = 5;
+//     }
+// }
+// document.write('Tu nota de Programación es ' + media);
+
+//Ejercicio 22
+// let dia = prompt('Por favor, introduzca un día de la semana (de lunes a viernes): ');
+// let diaNumerico = 0;
+// switch (dia) {
+//     case "lunes":
+//             diaNumerico = 0;
+//         break;
+//     case "martes":
+//             diaNumerico = 1;
+//         break;
+//     case "miércoles":
+//             diaNumerico = 2;
+//         break;
+//     case "jueves":
+//             diaNumerico = 3;
+//         break;
+//     case "viernes":
+//             diaNumerico = 4;
+//         break;
+//     default:
+//         document.write('"El día introducido no es correcto');
+//         break;
+// }
+// alert('A continuación introduzca la hora (hora y minutos)');
+// let horas = parseInt(prompt('Hora: '));
+// let minutos = parseInt(prompt('Minutos: '));
+// let minutosTotales = (4 * 24 * 60) + (15 * 60);
+// let minutosActuales = (diaNumerico * 24 * 60) + (horas * 60) + minutos;
+// document.write('Faltan ' + (minutosTotales - minutosActuales) + ' minutos para llegar al fin de semana');
+
+//Ejercicio 23
