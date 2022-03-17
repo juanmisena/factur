@@ -266,3 +266,78 @@
 //         break;
 // }
 // (mes > 12) ? document.write('la fecha ingresada no corresponde al horóscopo<br><br>') : document.write('Su horóscopo es ' + horoscopo);
+
+//Ejercicio 11
+// alert('A continuación deberá introducir una hora del día');
+// alert('primero introducirá la hora y luego los minutos');
+// let hora = parseInt(prompt('hora: '));
+// let minuto = parseInt(prompt('minuto: '));
+// let segundosTranscurridos = (hora * 3600) + (minuto * 60);
+// let segundosHastaMedianoche = (24 * 3600) - segundosTranscurridos;
+// document.write('Desde las ' + hora + ':' + minuto + ' hasta la medianoche faltan ' + segundosHastaMedianoche + ' segundos');
+
+//Ejercicio 12
+// let puntos = 0;
+// let respuesta = '';
+// alert('CUESTIONARIO DE 1º DAM');
+// alert('1. ¿Cuál de los siguientes tipos de datos de Java tiene más precisión?');
+// alert('a) int\nb) double\nc) float');
+// respuesta = prompt('Respuesta 1 Es => ');
+// if (respuesta === 'b') {
+//     puntos++;
+// }
+// alert('2. ¿Cuál es el lenguaje que se utiliza para hacer consultas en las bases de datos');
+// alert('a) XML\nb) SELECT\nc) SQL');
+// respuesta = prompt('Respuesta 2 Es => ');
+// if (respuesta === 'c') {
+//     puntos++;
+// }
+// alert('3. Para insertar un hiperenlace en una página se utiliza la etiqueta...');
+// alert('a) href\nb) a\nc) link');
+// respuesta = prompt('Respuesta 3 Es => ');
+// if (respuesta === 'b') {
+//     puntos++;
+// }
+// alert('4. ¿En qué directorio se encuentran los archivos de configuración de Linux?');
+// alert('a) /etc\nb) /config\nc) /cfg');
+// respuesta = prompt('Respuesta 4 Es => ');
+// if (respuesta === 'a') {
+//     puntos++;
+// }
+// alert('5. ¿Cuál de las siguientes memorias es volátil?');
+// alert('a) RAM\nb) EPROM\nc) ROM');
+// respuesta = prompt('Respuesta 5 Es => ');
+// if (respuesta === 'a') {
+//     puntos++;
+// }
+// document.write('\nHa obtenido ' + puntos + ' puntos');
+
+//Ejercicio 13
+// let aux;
+// alert('Este programa ordena tres números introducidos por teclado');
+// alert('Por favor, vaya introduciendo los tres números y pulsando INTRO:');
+// let a = parseInt(prompt('Numero 1: '));
+// let b = parseInt(prompt('Numero 2: '));
+// let c = parseInt(prompt('Numero 3: '));
+// // ordenación de los dos primeros números
+// if (a > b) {
+//     aux = a;
+//     a = b;
+//     b = aux;
+// }
+// // ordenación de los dos últimos números
+// if (b > c) {
+//     aux = b;
+//     b = c;
+//     c = aux;
+// }
+// // se vuelven a ordenar los dos primeros
+// if (a > b) {
+//     aux = a;
+//     a = b;
+//     b = aux;
+// }
+// document.write('Los números introducidos ordenados de menor a mayor son ' + a + ', ' + b + ' y ' + c + '.');
+
+//Ejercicio 14
+
