@@ -585,6 +585,55 @@
 // document.write('Faltan ' + (minutosTotales - minutosActuales) + ' minutos para llegar al fin de semana');
 
 //Ejercicio 23
+// let baseImponible = parseFloat(prompt('Introduzca la base imponible: '));
+// let tipoIVA = prompt('Introduzca el tipo de IVA \n(general, reducido o superreducido): ');
+// let codigoPromocional = prompt('Introduzca el código promocional \n(nopro, mitad, meno5 o 5porc): ');
+// // Calcula el IVA y el precio antes del descuento
+// let tipoIVANumerico = 0;
+// switch (tipoIVA) {
+//     case 'general':
+//         tipoIVANumerico = 21;
+//         break;
+//     case 'reducido':
+//         tipoIVANumerico = 10;
+//         break;
+//     case 'superreducido':
+//         tipoIVANumerico = 4;
+//         break;
+//     default:
+//         document.write('El tipo de IVA introducido no es correcto.');
+//         break;
+// }
+// let iva = baseImponible * tipoIVANumerico / 100;
+// let precioSinDescuento = baseImponible + iva;
+// // Calcula el descuento
+// let descuento = 0;
+// switch (codigoPromocional) {
+//     case 'nopro':
+        
+//         break;
+//     case 'mitad':// el precio se reduce a la mitad
+//         descuento = precioSinDescuento / 2;
+//         break;
+//     case 'meno5':// se descuentan 5 euros
+//         descuento = 5;
+//         break;
+//     case '5porc':// se descuenta el 5%
+//         descuento = precioSinDescuento * 0.05;
+//         break;
+//     default:
+//         document.write('El código promocional introducido no es correcto');
+//         break;
+// }
+// // Muestra el precio final del producto desglosado
+// let total = precioSinDescuento - descuento;
+// document.write('Base imponible       %6.2f\n&nbsp;', baseImponible, '<br>');
+// document.write('IVA (%2d%%)            %6.2f\n&nbsp;', tipoIVANumerico, iva, '<br>');
+// document.write('Precio con IVA       %6.2f\n&nbsp;', precioSinDescuento, '<br>');
+// document.write('Cód. promo. (%5s) -%6.2f\n&nbsp;', codigoPromocional, descuento, '<br>');
+// document.write('TOTAL                %6.2f&nbsp;', total, '<br>');
+
+//Ejercicio 24
 // let cargo;
 // cargo = parseInt(prompt('1 - Programador junior \n2 - Prog. senior \n3 - Jefe de proyecto \nIntroduzca el cargo del empleado (1 - 3): '));
 // let diasVisita = parseInt(prompt('¿Cuántos días ha estado de viaje visitando clientes? '));
@@ -625,4 +674,3 @@
 // document.write('&nbsp;&nbsp;&#9507;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9515;<br>');
 // document.write('&#9475; Sueldo neto            %7.2f &#9475;\n', sueldoBruto - cuantiaIrpf, '<br>');
 // document.write('&nbsp;&nbsp;&#9495;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9499;<br>');
-
