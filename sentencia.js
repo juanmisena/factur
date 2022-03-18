@@ -585,3 +585,44 @@
 // document.write('Faltan ' + (minutosTotales - minutosActuales) + ' minutos para llegar al fin de semana');
 
 //Ejercicio 23
+let cargo;
+cargo = parseInt(prompt('1 - Programador junior \n2 - Prog. senior \n3 - Jefe de proyecto \nIntroduzca el cargo del empleado (1 - 3): '));
+let diasVisita = parseInt(prompt('¿Cuántos días ha estado de viaje visitando clientes? '));
+let estadoCivil = parseInt(prompt('Introduzca su estado civil \n(1 - Soltero, 2 - Casado): '));
+let sueldoBase = 0;
+switch (cargo) {
+    case 1: // Programador junior
+        sueldoBase = 950;
+        break;
+    case 2: // Programador senior
+        sueldoBase = 1200;
+        break;
+    case 3: // jefe de proyecto
+        sueldoBase = 1600;
+        break;
+    default:
+        document.write('No ha elegido correctamente el sueldo base<br>');
+        break;
+}
+let sueldoDietas = diasVisita * 30;
+let sueldoBruto = sueldoBase + sueldoDietas;
+let irpf = 0;
+if (estadoCivil == 1) { // Soltero
+    irpf = 25;
+} else if (estadoCivil == 2) { // Casado
+    irpf = 20;
+} else {
+    document.write('No ha elegido correctamente el estado civil<br>');
+}
+let cuantiaIrpf = (sueldoBruto * irpf) / 100;
+// Muestra la nómina desglosada
+document.write('&nbsp;&nbsp;&#9487;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9491;<br>');
+document.write('&#9475; Sueldo base            %7.2f &#9475;\n',sueldoBase,'<br>');
+document.write('&#9475; Dietas (%2d viajes)     %7.2f &#9475;\n', diasVisita, sueldoDietas,'<br>');
+document.write('&nbsp;&nbsp;&#9507;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9515;<br>');
+document.write('&#9475; Sueldo bruto           %7.2f &#9475;\n', sueldoBruto,'<br>');
+document.write('&#9475; Retención IRPF (%.0f%%)   %7.2f &#9475;\n', irpf, cuantiaIrpf, '<br>');
+document.write('&nbsp;&nbsp;&#9507;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9515;<br>');
+document.write('&#9475; Sueldo neto            %7.2f &#9475;\n', sueldoBruto - cuantiaIrpf, '<br>');
+document.write('&nbsp;&nbsp;&#9495;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9499;<br>');
+
