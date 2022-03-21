@@ -676,20 +676,20 @@
 // document.write('&nbsp;&nbsp;&#9495;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9499;<br>');
 
 //Ejercicio 25
-let altura = parseInt(prompt('Introduzca la altura de la bandera en cm: '));
-let anchura = parseInt(prompt('Ahora introduzca la anchura: '));
-let conEscudo = confirm('¿Quiere escudo bordado?');
-let escudoCadena;
-let precioEscudo;
-if (conEscudo == true) {
-    escudoCadena = 'Con Escudo';
-    precioEscudo = 2.50;
-} else {
-    escudoCadena = 'Sin Escudo';
-    precioEscudo = 0;
-}
-document.write('Gracias. Aquí tiene el desglose de su compra<br>');
-document.write('Bandera de %5d cm2: %5.2f €\n', anchura * altura, (anchura * altura / 100),'<br>');
-document.write('%s:           %5.2f €\n', escudoCadena, precioEscudo,'<br>');
-document.write('Gastos de envío:      %5.2f €\n', 3.25,'<br>');
-document.write('Total:                %5.2f €\n', (anchura * altura / 100) + precioEscudo + 3.25,'<br>');
+// let altura = parseInt(prompt('Introduzca la altura de la bandera en cm: '));
+// let anchura = parseInt(prompt('Ahora introduzca la anchura: '));
+// let conEscudo = confirm('¿Quiere escudo bordado?');
+// let escudoCadena;
+// let precioEscudo;
+// if (conEscudo == true) {
+//     escudoCadena = 'Con Escudo';
+//     precioEscudo = 2.50;
+// } else {
+//     escudoCadena = 'Sin Escudo';
+//     precioEscudo = 0;
+// }
+// document.write('Gracias. Aquí tiene el desglose de su compra<br>');
+// document.write('Bandera de %5d cm2: %5.2f €\n', anchura * altura, (anchura * altura / 100),'<br>');
+// document.write('%s:           %5.2f €\n', escudoCadena, precioEscudo,'<br>');
+// document.write('Gastos de envío:      %5.2f €\n', 3.25,'<br>');
+// document.write('Total:                %5.2f €\n', (anchura * altura / 100) + precioEscudo + 3.25,'<br>');
