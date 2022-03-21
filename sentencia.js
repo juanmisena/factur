@@ -682,7 +682,7 @@ let conEscudo = confirm('¿Quiere escudo bordado?');
 let escudoCadena;
 let precioEscudo;
 if (conEscudo == true) {
-    escudoCadeña = 'Con Escudo';
+    escudoCadena = 'Con Escudo';
     precioEscudo = 2.50;
 } else {
     escudoCadena = 'Sin Escudo';
