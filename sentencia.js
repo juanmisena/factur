@@ -681,7 +681,7 @@ let anchura = parseInt(prompt('Ahora introduzca la anchura: '));
 let conEscudo = confirm('¿Quiere escudo bordado?');
 let escudoCadena;
 let precioEscudo;
-if (conEscudo) {
+if (conEscudo == true) {
     escudoCadeña = 'Con Escudo';
     precioEscudo = 2.50;
 } else {
