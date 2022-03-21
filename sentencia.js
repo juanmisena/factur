@@ -676,7 +676,6 @@
 // document.write('&nbsp;&nbsp;&#9495;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9499;<br>');
 
 //Ejercicio 25
-
 let altura = parseInt(prompt('Introduzca la altura de la bandera en cm: '));
 let anchura = parseInt(prompt('Ahora introduzca la anchura: '));
 let conEscudo = confirm('¿Quiere escudo bordado?');
