@@ -689,7 +689,7 @@ if (conEscudo) {
     precioEscudo = 0;
 }
 document.write('Gracias. Aquí tiene el desglose de su compra<br>');
-document.write('Bandera de %5d cm2: %5.2f €\n', anchura * altura, parseFloat(anchura * altura / 100));
-document.write('%s:           %5.2f €\n', escudoCadena, precioEscudo);
-document.write('Gastos de envío:      %5.2f €\n', 3.25);
-document.write('Total:                %5.2f €\n', (anchura * altura / 100) + precioEscudo + 3.25);
+document.write('Bandera de %5d cm2: %5.2f €\n', anchura * altura, (anchura * altura / 100),'<br>');
+document.write('%s:           %5.2f €\n', escudoCadena, precioEscudo,'<br>');
+document.write('Gastos de envío:      %5.2f €\n', 3.25,'<br>');
+document.write('Total:                %5.2f €\n', (anchura * altura / 100) + precioEscudo + 3.25,'<br>');
