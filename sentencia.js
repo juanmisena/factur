@@ -675,7 +675,7 @@
 // document.write('&#9475; Sueldo neto            %7.2f &#9475;\n', sueldoBruto - cuantiaIrpf, '<br>');
 // document.write('&nbsp;&nbsp;&#9495;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9473;&#9499;<br>');
 
-Ejercicio 25
+//Ejercicio 25
 let altura = parseInt(prompt('Introduzca la altura de la bandera en cm: '));
 let anchura = parseInt(prompt('Ahora introduzca la anchura: '));
 let conEscudo = confirm('¿Quiere escudo bordado?');
