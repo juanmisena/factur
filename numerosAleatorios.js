@@ -110,3 +110,25 @@
 //     }
 // }
 // document.write('<br><br>\nMínimo: '+ minimo + '\nMáximo: ' + maximo + '\nMedia: ' + suma / 50);
+
+//Ejercicio 6
+let oportunidades = 5;
+let numeroIntroducido;
+let acertado = false;
+let numeroMisterioso = Math.round(Math.random()*101);
+alert('Estoy pensando un número del 0 al 100, intenta adivinarlo. Tienes 5 oportunidades.');
+do {
+    numeroIntroducido = parseInt(prompt('Introduce un número: '));
+    oportunidades--;
+    if ((numeroIntroducido > numeroMisterioso) && (oportunidades > 0)) {
+        document.write('El número que estoy pensando es menor que ' + numeroIntroducido + '<br>');
+        console.log('Te quedan ' + oportunidades + ' oportunidades');
+    }
+    if (numeroIntroducido == numeroMisterioso) {
+        acertado = true;
+        document.write('¡Enhorabuena! ¡has acertado!');
+    }
+} while (!acertado && (oportunidades > 0));
+if (!acertado) {
+    document.write('Lo siento, no has acertado, el número que estaba pensando era el ' + numeroMisterioso + '<br>');
+}
