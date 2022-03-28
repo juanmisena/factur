@@ -86,3 +86,27 @@
 //         break;
 // }
 // document.write(carta + ' de ' + palo);
+
+//Ejercicio 4
+// for (let i = 0; i < 20; i++) {
+//     document.write(Math.round(Math.random()*11) + ' ');
+// }
+// document.write('<br>');
+
+//Ejercicio 5
+// let maximo = 100
+// let minimo = 199
+// let suma = 0;
+// let n;
+// for (let i = 0; i < 50; i++) {
+//     n = Math.round(Math.random()*100) + 100;
+//     document.write(n + ' ');
+//     suma += n;
+//     if (n < minimo) {
+//         minimo = n;
+//     }
+//     if (n > maximo) {
+//         maximo = n;
+//     }
+// }
+// document.write('<br><br>\nMínimo: '+ minimo + '\nMáximo: ' + maximo + '\nMedia: ' + suma / 50);
