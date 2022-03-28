@@ -47,3 +47,42 @@
 //         break;
 // }
 // document.write(carta + ' de ' + palo + '<br>');
+
+//Ejercicio 3
+// let palo = '';
+// let carta = '';
+// switch (Math.round(Math.random()*4)) {
+//     case 0:
+//         palo = 'oros';
+//         break;
+//     case 1:
+//         palo = 'copas';
+//         break;
+//     case 2:
+//         palo = 'bastos';
+//         break;
+//     case 3:
+//         palo = 'espadas';
+//         break;
+//     default:
+//         break;
+// }
+// let numeroCarta = Math.round(Math.random()*11) + 1;
+// switch (numeroCarta) {
+//     case 1:
+//         carta = 'As';
+//         break;
+//     case 8:
+//         carta = 'Sota'
+//         break;
+//     case 9:
+//         carta = 'Caballo';
+//         break;
+//     case 10:
+//         carta = 'Rey';
+//         break;
+//     default:
+//         carta = String(numeroCarta);
+//         break;
+// }
+// document.write(carta + ' de ' + palo);
