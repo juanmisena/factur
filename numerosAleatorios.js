@@ -168,3 +168,42 @@
 // goles = Math.round(Math.random()*4);
 // document.write('<br>');
 // document.write(goles < 3 ? goles : 'M');
+
+//Ejercicio 8
+// let resultadoPartido;
+// let columnas = 3;
+// for (let fila = 1; fila <=14; fila++) {
+//     document.write('%4d. |', fila);
+//     for (let apuesta = 1; apuesta < columnas; apuesta++) {
+//         resultadoPartido = Math.round(Math.random()*6) + 1;
+//         switch (resultadoPartido) {
+//             case 1:
+//             case 2:
+//             case 3:
+//                 document.write('1  |');
+//                 break;
+//             case 4:
+//             case 5:
+//                 document.write(' X |');
+//                 break;
+//             case 6:
+//                 document.write('  2|');
+//             default:
+//                 break;
+//         }
+//     }
+//     document.write('<br>');
+// }
+// document.write('<br>');
+// // Pleno al 15
+// document.write('\nPLENO AL 15 - Local...');
+// document.write('<br>');
+// let goles = Math.round(Math.random()*4);
+// document.write('<br>');
+// document.write(goles < 3 ? goles : 'M');
+// document.write('<br>');
+// document.write('   Visitante...');
+// document.write('<br>');
+// goles = Math.round(Math.random()*4);
+// document.write('<br>');
+// document.write(goles < 3 ? goles : 'M');
