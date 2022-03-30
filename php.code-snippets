@@ -1,0 +1,86 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"line":{
+		"prefix": "line",
+		"body": [
+			"$LINE_COMMENT "
+		],
+		"description": "comentario en php"
+	},
+	"multy": {
+		"prefix": "multy",
+		"body": "$BLOCK_COMMENT_START lorem ipsum dolor sit amet $BLOCK_COMMENT_END",
+		"description": "comentario en blocked"
+	},
+	"configuracion mysql": {
+		"scope": "php",
+		"prefix": "conf",
+		"body": [
+			"<?php",
+			"$host='localhost';",
+			"$user='user';",
+			"$password='password';",
+			"$database='database';",
+			"$port='3306';",
+		 	"?>"
+		],
+		"description": "configuracion para conexion mysql"
+	},
+	"connection to mysql": {
+		"prefix": "con",
+		"body": [
+			"<?php",
+				"class Connection{",
+					"private $host;",
+					"private $user;",
+					"private $password;",
+					"private $database;",
+					"private $port;",
+					"private $link;",
+					"function __construct(){",
+						"$this->setConnect();",
+						"$this->connect();",
+					"}",
+					"private function setConnect(){",
+					"require_once 'roter';",
+					"$this->host=$host;",
+					"$this->user=$user;",
+					"$this->password=$password;",
+					"$this->database=$database;",
+					"$this->port=$port;",
+					"}",
+					"private function connect() {",
+						"$this->link=mysqli_connect($this->host,$this->user,$this->password,$this->database);",
+							"if($this->link) {",
+							"echo 'Connected!';",
+							"}else {",
+							"mysqli_error($this->link);",
+						"}",
+					"}",
+					"public function getConnect(){",
+						"return $this->link;",
+					"}",
+					"public function close(){",
+						"mysqli_close($this->link);",
+					"}",
+				"}",
+			"?>"
+		],
+		"description": "connection to database for mysql"
+	}
+}

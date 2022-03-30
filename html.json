@@ -1,0 +1,132 @@
+{
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"php": {
+		"prefix": "php",
+		"body": [
+		"<?php $1 ?>"
+		],
+		"description": "php tag"
+	},
+
+	"head": {
+		"prefix": "head",
+		"body": [
+		"<head></head>"
+		],
+		"description": "head tag"
+	},
+	
+	"html": {
+		"prefix": "html",
+		"body": [
+			"<!DOCTYPE html> </html>"
+		],
+		"description": "html tag"
+	},
+
+	"meta": {
+		"prefix": "meta",
+		"body": [
+		"<meta charset=UTF-8>"
+		],
+		"description": "php tag"
+	},
+
+	"body": {
+		"prefix": "body",
+		"body": [
+		"<body></body>"
+		],
+		"description": "body tag"
+	},
+
+	"link": {
+		"prefix": "link",
+		"body": [
+		"<link rel=stylesheet type=text/css href=>"
+		],
+		"description": "link tag"
+	},
+	
+	"echo": {
+		"prefix": "echo",
+		"body": [
+		"echo 1;"
+		],
+		"description": "echo tag"
+	},
+
+	"icon":{
+		"prefix": "icon",
+		"body": [
+		"<link rel=shortcut icon type=image/x-icon href=>"
+		],
+		"description": "icon tag"
+	},
+	"materialize css":{
+		"prefix": "mzcss",
+		"body": [
+			"<!--Import Google Icon Font-->",
+			"<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>",
+			"<!-- Compiled and minified CSS -->",
+			"<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>"
+		]
+	},
+	"materialize js": {
+		"prefix": "mzjs",
+		"body": [
+			"<!--jQuery Migrate CDN-->",
+			"<script src='https://code.jquery.com/jquery-migrate-3.3.2.min.js' integrity='sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=' crossorigin='anonymous'></script>",
+			"<!--Google CDN-->",
+			"<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>",
+			"<!-- Compiled and minified JavaScript -->",
+			"<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>"
+		]
+	},
+	"bootstrap css":{
+		"prefix": "bcss",
+		"body": [
+			"<!-- Import Font Awesome CSS -->",
+			"<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>",
+			"<!-- Bootstrap CSS -->",
+			"<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous'>"
+		]
+	},
+	"bootstrap js":{
+		"prefix": "bjs",
+		"body": [
+			"<!-- Optional JavaScript; choose one of the two! -->",
+			"<!-- Option 1: Bootstrap Bundle with Popper -->",
+			"<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous'></script>",
+			"<!-- Option 2: Separate Popper and Bootstrap JS -->",
+			"<!--",
+			"<script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js' integrity='sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB'crossorigin='anonymous'></script>",
+			"<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js' integrity='sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13' crossorigin='anonymous'></script>",
+			"-->",
+			"<!--jQuery Migrate CDN-->",
+			"<script src='https://code.jquery.com/jquery-migrate-3.3.2.min.js' integrity='sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=' crossorigin='anonymous'></script>",
+			"<!--Google CDN-->",
+			"<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>"
+		]
+	},
+	"command to Html":{
+		"prefix": "com",
+		"body": "<!--  -->"
+	},
+	"additional jquery": {
+		"prefix": "jquery",
+		"body": "<script src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>"
+	}
+}
