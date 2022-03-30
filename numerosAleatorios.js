@@ -132,3 +132,39 @@
 // if (!acertado) {
 //     document.write('Lo siento, no has acertado, el número que estaba pensando era el ' + numeroMisterioso + '<br>');
 // }
+
+//Ejercicio 7
+// let resultadoPartido;
+// let columnas = 3;
+// for (let fila = 1; fila <=14; fila++) {
+//     document.write('%4d. |', fila);
+//     for (let apuesta = 1; apuesta < columnas; apuesta++) {
+//         resultadoPartido = Math.round(Math.random()*3) + 1;
+//         switch (resultadoPartido) {
+//             case 1:
+//                 document.write('1  |');
+//                 break;
+//             case 2:
+//                 document.write('  2|');
+//                 break;
+//             case 3:
+//                 document.write(' X |');
+//             default:
+//                 break;
+//         }
+//     }
+//     document.write('<br>');
+// }
+// document.write('<br>');
+// // Pleno al 15
+// document.write('\nPLENO AL 15 - Local...');
+// document.write('<br>');
+// let goles = Math.round(Math.random()*4);
+// document.write('<br>');
+// document.write(goles < 3 ? goles : 'M');
+// document.write('<br>');
+// document.write('   Visitante...');
+// document.write('<br>');
+// goles = Math.round(Math.random()*4);
+// document.write('<br>');
+// document.write(goles < 3 ? goles : 'M');
