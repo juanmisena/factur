@@ -207,3 +207,89 @@
 // goles = Math.round(Math.random()*4);
 // document.write('<br>');
 // document.write(goles < 3 ? goles : 'M');
+
+//Ejercicio 9
+// let  n = 0;
+// let cuentaNumeros = 0;
+// while (n != 24) {
+//     n = Math.round(Math.random() * 51) * 2;
+//     document.write(n + ' ');
+//     cuentaNumeros++;
+// }
+// document.write('<br>Se han generado ' + cuentaNumeros + ' números');
+
+//Ejercicio 10
+// let r;
+// let longitud;
+// let relleno = '';
+// for (let i = 1; i <= 10; i++) {
+//     longitud = Math.round(Math.random() * 40) + 1;
+//     r = Math.round(Math.random() * 6);
+//     switch (r) {
+//         case 0:
+//             relleno = '*';
+//             break;
+//         case 1:
+//             relleno = '-';
+//             break;
+//         case 2:
+//             relleno = '=';
+//             break;
+//         case 3:
+//             relleno = '.';
+//             break;
+//         case 4:
+//             relleno = '|';
+//             break;
+//         case 5:
+//             relleno = '@';
+//             break;
+//         default:
+//             break;
+//     }
+//     // pinta la línea
+//     for (let j = 1; j <= longitud; j++) {
+//         document.write(relleno);
+//     }
+//     document.write('<br>');
+// }
+
+//Ejercicio 11
+// let nota;
+// let suspensos = 0;
+// let suficientes = 0;
+// let bienes = 0;
+// let notables = 0;
+// let sobresalientes = 0;
+// for (let i = 1; i < 20; i++) {
+//     nota = Math.round(Math.random() * 5);
+//     switch (nota) {
+//         case 0:
+//             document.write('suspenso ');
+//             suspensos++;
+//             break;
+//         case 1:
+//             document.write('suficientes ');
+//             suficientes++;
+//         case 2:
+//             document.write('bienes ');
+//             bienes++;
+//             break;
+//         case 3:
+//             document.write('notables ');
+//             notables++;
+//             break;
+//         case 4:
+//             document.write('sobresalientes ');
+//             sobresalientes++;
+//             break;
+//         default:
+//             break;
+//     }
+// }
+// document.write('<br>');
+// document.write('\nNº de suspensos: ' +  suspensos + '<br>');
+// document.write('Nº de suficientes: ' + suficientes + '<br>');
+// document.write('Nº de bienes: ' + bienes + '<br>');
+// document.write('Nº de notables: ' + notables + '<br>');
+// document.write('Nº de sobresalientes: ' + sobresalientes + '<br>');
