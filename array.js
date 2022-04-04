@@ -22,3 +22,14 @@
 // for(let i = 0; i < 10; i++) {
 //   console.log('simbolo[' + i + ']: ' + simbolo[i]);
 // }
+
+//Ejercicio 3
+// var n = new Array(10);
+// alert('Pulse la tecla INTRO después de introducir cada número.');
+// for(let i = 0; i < 10; i++){
+// n[i] = parseInt(prompt('Por favor, introduzca 10 números enteros'));
+// }
+// console.log('\nLos números introducidos, al revés, son los siguientes:');
+// for(let i = 9; i >= 0; i--) {
+//   console.log(n[i]);
+// }
