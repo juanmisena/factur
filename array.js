@@ -229,3 +229,75 @@
 // for (let i = 0; i < 20; i++) {
 //   document.write(n[i] + " <br>");
 // }
+
+// Ejercicio 11
+// let n = new Array(10);
+// let primo = new Array(10);
+// let noPrimo = new Array(10);
+// let primos = 0;
+// let noPrimos = 0;
+// let esPrimo = false;
+// for (let i = 0; i < 10; i++) {
+//   n[i] = parseInt(prompt("Introduzca 10 números separados por INTRO:"));
+//   // Comprueba si el número es o no primo.
+//   esPrimo = true;
+//   for (let j = 2; j < n[i] - 1; j++) {
+//     if (n[i] % j == 0) {
+//       esPrimo = false;
+//     }
+//   }
+//   // Si el número es primo, se mete en un array y si
+//   // no es primo, se mete en otro diferente.
+//   if (esPrimo) {
+//     primo[primos++] = n[i];
+//   } else {
+//     noPrimo[noPrimos++] = n[i];
+//   }
+// }
+// // Muestra el array original
+// document.write("\n\nArray original:<br>");
+// document.write(
+//   "\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐<br>"
+// );
+// document.write("│ Índice <br>");
+// for (let i = 0; i < 10; i++) {
+//   document.write("│%4d ", i, "<br>");
+// }
+// document.write(
+//   "│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤<br>"
+// );
+// document.write("│ Valor  <br>");
+// for (let i = 0; i < 10; i++) {
+//   document.write("│%4d ", n[i], "<br>");
+// }
+// document.write(
+//   "│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘<br>"
+// );
+// // Los números primos se menten en las primeras
+// // posiciones del array original.
+// for (let i = 0; i < primos; i++) {
+//   n[i] = primo[i];
+// }
+// // Los números que no son primos se colocan al final.
+// for (let i = primos; i < primos + noPrimos; i++) {
+//   n[i] = noPrimo[i - primos];
+// }
+// // Muestra el resultado.
+// document.write("\n\nArray con los primos al principio:<br>");
+// document.write(
+//   "\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐<br>"
+// );
+// document.write("│ Índice <br>");
+// for (let i = 0; i < 10; i++) {
+//   document.write("│%4d ", i, "<br>");
+// }
+// document.write(
+//   "│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤<br>"
+// );
+// document.write("│ Valor  <br>");
+// for (let i = 0; i < 10; i++) {
+//   document.write("│%4d ", n[i], "<br>");
+// }
+// document.write(
+//   "│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘<br>"
+// );
