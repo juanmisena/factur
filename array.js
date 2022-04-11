@@ -439,3 +439,75 @@
 //     document.write(element + " <br>");
 //   }
 // });
+
+// Ejercicio 14
+// let color = [
+//   "verde",
+//   "rojo",
+//   "azul",
+//   "amarillo",
+//   "naranja",
+//   "rosa",
+//   "negro ",
+//   "blanco",
+//   "morado"
+// ];
+// let palabra = new Array("8");
+// let resultado = new Array("8");
+// let j = 0;
+// for (let i = 0; i < 8; i++) {
+//   palabra[i] = prompt(
+//     "Introduzca 8 palabras (vaya pulsando [INTRO] entre una y otra."
+//   );
+//   // Si la palabra introducida es un color, la guarda en el array resultado.
+//   color.forEach((c) => {
+//     if (palabra[i] == c) {
+//       resultado[j++] = c;
+//     }
+//   });
+// }
+// // Mete las palabras que no son colores al final del array resultado.
+// for (let i = 0; i < 8; i++) {
+//   let esColor = false;
+//   color.forEach((c) => {
+//     if (palabra[i] == c) {
+//       esColor = true;
+//     }
+//   });
+//   if (!esColor) {
+//     resultado[j++] = palabra[i];
+//   }
+// }
+// document.write("\n\nArray original:");
+// document.write(
+//   "\n┌────────┬────────┬────────┬────────┬────────┬────────┬────────┬────────┐<br>"
+// );
+// for (let i = 0; i < 8; i++) {
+//   document.write("│   %d    ", i, "<br>");
+// }
+// document.write(
+//   "│\n├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤<br>"
+// );
+// palabra.forEach((p) => {
+//   document.write("│%-8s", p, "<br>");
+// });
+// document.write(
+//   "│\n└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┘"
+// );
+// // Muestra el array resultado.
+// document.write("\n\nArray resultado:");
+// document.write(
+//   "\n┌────────┬────────┬────────┬────────┬────────┬────────┬────────┬────────┐<br>"
+// );
+// for (let i = 0; i < 8; i++) {
+//   document.write("│   %d    ", i, "<br>");
+// }
+// document.write(
+//   "│\n├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤<br>"
+// );
+// resultado.forEach((r) => {
+//   document.write("│%-8s", r, "<br>");
+// });
+// document.write(
+//   "│\n└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┘"
+// );
