@@ -511,3 +511,60 @@
 // document.write(
 //   "│\n└────────┴────────┴────────┴────────┴────────┴────────┴────────┴────────┘"
 // );
+
+// Ejercicio 15
+// let mesa = new Array(10);
+// // Rellena las mesas de forma aleatoria.
+// for (let i = 0; i < 10; i++) {
+//   mesa[i] = Math.round(Math.random() * 5);
+// }
+// let clientes; // número de clientes que llegan al restaurante buscando mesa
+// // Muestra el estado de ocupación de las mesas
+// do {
+//   document.write("\n┌─────────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐<br>");
+//   document.write("│Mesa nº: <br>");
+//   for (let i = 1; i < 11; i++) {
+//     document.write("│ %2d ", i, "<br>");
+//   }
+//   document.write("│\n├─────────┼────┼────┼────┼────┼────┼────┼────┼────┼────┼────┤<br>");
+//   document.write("│Ocupación<br>");
+//   mesa.forEach(function(m) {
+//     document.write("│ %2d ", m, "<br>");
+//   });
+//   document.write("│\n└─────────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘<br>");
+//   clientes = parseInt(prompt("¿Cuántos son? (Introduzca -1 para salir del programa): "));
+//   if (clientes > 4) { // comprueba si el grupo de clientes es mayor a 4
+//     document.write("Lo siento, no admitimos grupos de 6, haga grupos de<br>");
+//     document.write(" 4 personas como máximo e intente de nuevo.<br>");
+//   } else {
+//     // Busca una mesa que esté vacía.
+//     let iVacia = 0;
+//     let hayMesaVacia = false;
+//     for (let i = 9; i >= 0; i--) {
+//       if (mesa[i] == 0) {
+//         iVacia = i;
+//         hayMesaVacia = true;
+//       }
+//     }
+//     if (hayMesaVacia) {
+//       mesa[iVacia] = clientes; // coloca a los clientes en la mesa libre
+//       document.write("Por favor, siéntense en la mesa número " + (iVacia + 1) + ".<br>");
+//     } else {
+//       // Busca un hueco para todo el grupo.
+//       let iHueco = 0;
+//       let hayHueco = false;
+//       for (let i = 9; i >= 0; i--) {
+//         if (clientes <= (4 - mesa[i])) {
+//           iHueco = i;
+//           hayHueco = true;
+//         }
+//       }
+//       if (hayHueco) {
+//         mesa[iHueco] += clientes; // coloca a los clientes en el primer hueco disponible
+//         document.write("Tendrán que compartir mesa. Por favor, siéntense en la mesa número " + (iHueco + 1) + ".<br>");
+//       } else {
+//         document.write("Lo siento, en estos momentos no queda sitio.<br>");
+//       }
+//     }
+//   }
+// } while (clientes != -1);
