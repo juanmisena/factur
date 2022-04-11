@@ -303,76 +303,102 @@
 // );
 
 // Ejercicio 12
-let n = new Array(10), 
-resultado = new Array(10);
-let nInicial, nFinal, valido;
-for (let i = 0; i < 10; i++) {
-    n[i] = parseInt(prompt("Introduzca 10 números separados por INTRO:"));
-}
-// Muestra el array original.
-document.write("\n\nArray original:");
-document.write("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
-document.write("│ Índice ");
-for (let i = 0; i < 10; i++) {
-    document.write("│%4d ", i, "<br>");
-}
-document.write("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
-document.write("│ Valor  ");
-for (let i = 0; i < 10; i++) {
-    document.write("│%4d ", n[i], "<br>");
-}
-document.write("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
-// Pide las posiciones inicial y final.
-do {
-    valido = true;
-    nInicial = parseInt(prompt("Introduzca la posición inicial (0 - 9): "));
-    if ((nInicial < 0) || (nInicial > 9)) {
-        document.write("Valor incorrecto, debe ser un número entre el 0 y el 9.");
-        valido = false;
-    }
-    nFinal = parseInt(prompt("Introduzca la posición final (0 - 9): "));
-    if((nFinal < 0) || (nFinal > 9)){
-        document.write("Valor incorrecto, debe ser un número entre el 0 y el 9.");
-        valido = false;
-    }
-    if (nInicial >= nFinal) {
-        document.write("Valores incorrectos, la posición inicial debe ser menor que la posición final.");
-        valido = false;
-    }
-} while (!valido);
-// Muestra de nuevo el array original.
-document.write("\n\nArray original:");
-document.write("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
-document.write("│ Índice ");
-for (let i = 0; i < 10; i++) {
-    document.write("│%4d ", i, "<br>");
-}
-document.write("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
-document.write("│ Valor  ");
-for (let i = 0; i < 10; i++) {
-    document.write("│%4d ", n[i], "<br>");
-}
-document.write("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
-// Copia el array n en resultado.
-for (let i = 0; i < 10; i++) {
-    resultado[i] = n[i];
-}
-resultado[nFinal] = resultado[nInicial];
-for (let i = nFinal + 1; i < 10; i++)
-    resultado[i] = n[i - 1];
-    resultado[0] = n[9];
-for (let i = 0; i < nInicial; i++)
-    resultado[i + 1] = n[i];
-// Muestra el resultado.
-document.write("\nArray resultante:<br>");
-document.write("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐<br>");
-document.write("│ Índice <br>");
-for (let i = 0; i < 10; i++) {
-    document.write("│%4d ", i, "<br>");
-}
-document.write("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
-document.write("│ Valor  ");
-for (let i = 0; i < 10; i++) {
-    document.write("│%4d ", resultado[i], "<br>");
-}
-document.write("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
+// let n = new Array(10),
+// resultado = new Array(10);
+// let nInicial, nFinal, valido;
+// for (let i = 0; i < 10; i++) {
+// n[i] = parseInt(prompt("Introduzca 10 números separados por INTRO:"));
+// }
+// // Muestra el array original.
+// document.write("\n\nArray original:");
+// document.write(
+// "\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐"
+// );
+// document.write("│ Índice ");
+// for (let i = 0; i < 10; i++) {
+// document.write("│%4d ", i, "<br>");
+// }
+// document.write(
+// "│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤"
+// );
+// document.write("│ Valor  ");
+// for (let i = 0; i < 10; i++) {
+// document.write("│%4d ", n[i], "<br>");
+// }
+// document.write(
+// "│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘"
+// );
+// // Pide las posiciones inicial y final.
+// do {
+// valido = true;
+// nInicial = parseInt(prompt("Introduzca la posición inicial (0 - 9): "));
+// if (nInicial < 0 || nInicial > 9) {
+//   document.write(
+//     "Valor incorrecto, debe ser un número entre el 0 y el 9."
+//   );
+//   valido = false;
+// }
+// nFinal = parseInt(prompt("Introduzca la posición final (0 - 9): "));
+// if (nFinal < 0 || nFinal > 9) {
+//   document.write(
+//     "Valor incorrecto, debe ser un número entre el 0 y el 9."
+//   );
+//   valido = false;
+// }
+// if (nInicial >= nFinal) {
+//   document.write(
+//     "Valores incorrectos, la posición inicial debe ser menor que la posición final."
+//   );
+//   valido = false;
+// }
+// } while (!valido);
+// // Muestra de nuevo el array original.
+// document.write("\n\nArray original:");
+// document.write(
+// "\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐"
+// );
+// document.write("│ Índice ");
+// for (let i = 0; i < 10; i++) {
+// document.write("│%4d ", i, "<br>");
+// }
+// document.write(
+// "│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤"
+// );
+// document.write("│ Valor  ");
+// for (let i = 0; i < 10; i++) {
+// document.write("│%4d ", n[i], "<br>");
+// }
+// document.write(
+// "│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘"
+// );
+// // Copia el array n en resultado.
+// for (let i = 0; i < 10; i++) {
+// resultado[i] = n[i];
+// }
+// resultado[nFinal] = resultado[nInicial];
+// for (let i = nFinal + 1; i < 10; i++) {
+// resultado[i] = n[i - 1];
+// resultado[0] = n[9];
+// }
+// for (let i = 0; i < nInicial; i++) {
+// resultado[i + 1] = n[i];
+// }
+// // Muestra el resultado.
+// document.write("\nArray resultante:<br>");
+// document.write(
+// "\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐<br>"
+// );
+// document.write("│ Índice <br>");
+// for (let i = 0; i < 10; i++) {
+// document.write("│%4d ", i, "<br>");
+// }
+// document.write(
+// "│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤"
+// );
+// document.write("│ Valor  ");
+// for (let i = 0; i < 10; i++) {
+// document.write("│%4d ", resultado[i], "<br>");
+// }
+// document.write(
+// "│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘"
+// );
