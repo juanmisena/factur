@@ -16,43 +16,28 @@
 		"prefix": "express",
 		"body": [
 			"const express = require('express');",
-			"const bodyParser = require('body-parser');",
 			"const app = express();",
-			"// parse application/x-www-form-urlencoded",
-			"app.use(bodyParser.urlencoded({ extended: false }));",
-			"// parse application/json",
-			"app.use(bodyParser.json());",
-			"// port the server at http://localhost",
-			"const port = process.env.PORT || 3000;",
-			"//routes the server",
-			"app.get('/', (req, res) => {",
-				"res.send('Hello Word!');",
-			"});",
-			"//listen on port",
-			"app.listen(port, () => {",
-				"console.log(`listener in the ${}`);",
-			"});"
+			"app.use(express.json());",
+			"app.use(express.urlencoded({ extended: false }));",
+			"app.use(express.static('public'));"
 		],
 		"description": "llamando al server"
 	},
 	"mysql":{
 		"prefix": "mysql",
-		"body": [
-			"var mysql = require('mysql');",
-			"var connection = mysql.createConnection({",
-				"host: '',",
-				"username: '',",
-				"password: '',",
-				"database: ''});",
-			"connection.connect();",
-			"var sql = 'SELECT * FROM DUAL';",
-			"connection.query(sql,function(error,results,fields){",
-				"if(error) throw error;",
-				"console.log(results);",
-				"});",
-			"connection.end();"
-		],
+		"body": "const mysql = require('mysql');",
 		"description": "conexion a base database"
+	},
+	"multitenancy on the server":{
+		"prefix": "pool",
+		"body": [
+			"const pool = mysql.createPool({",
+			"host: 'localhost',",
+			"user: 'root',",
+			"password: '',",
+			"database: 'your_db'",
+			"});"
+		]
 	},
 	"block of comment":{
 		"prefix": "blo",
@@ -65,5 +50,19 @@
 	"out is window":{
 		"prefix": "wr",
 		"body": "document.write();"
+	},
+	"method resolves":{
+		"prefix": "path",
+		"body": "const path = require('path');"
+	},
+	"parse incoming request":{
+		"prefix": "body",
+		"body": [
+			"const bodyParser = require('body-parser');",
+			"// parse application/x-www-form-urlencoded",
+			"app.use(bodyParser.urlencoded({ extended: false }));",
+			"// parse application/json",
+			"app.use(bodyParser.json());"
+		]
 	}
 }
