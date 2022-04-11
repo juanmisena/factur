@@ -372,7 +372,7 @@ for (let i = 0; i < 10; i++) {
 }
 document.write("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
 document.write("│ Valor  ");
-for (let index = 0; index < 10; index++) {
+for (let i = 0; i < 10; i++) {
     document.write("│%4d ", resultado[i], "<br>");
 }
 document.write("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
