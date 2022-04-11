@@ -402,3 +402,40 @@
 // document.write(
 // "│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘"
 // );
+
+// Ejercicio 13
+// let n = new Array(100);
+// let maximo = 0;
+// let minimo = 100;
+// // Genera los números y calcula el máximo y el mínimo
+// for (let i = 0; i < 100; i++) {
+//   n[i] = Math.round(Math.random() * 501);
+//   if (n[i] < minimo) {
+//     minimo = n[i];
+//   }
+//   if (n[i] > maximo) {
+//     maximo = n[i];
+//   }
+// }
+// // Muestra el array original
+// n.forEach((element) => {
+//   document.write(element + " <br>");
+// });
+// let opcion = parseInt(
+//   prompt("\n\n¿Qué quiere destacar? (1 – mínimo, 2 – máximo): ")
+// );
+// let destacado; // número que se va a destacar del resto
+// if (opcion == 1) {
+//   destacado = minimo;
+// } else {
+//   destacado = maximo;
+// }
+// document.write("<br>");
+// // número que se va a destacar del resto
+// n.forEach((element) => {
+//   if (element == destacado) {
+//     document.write(" **" + element + "** <br>");
+//   } else {
+//     document.write(element + " <br>");
+//   }
+// });
