@@ -568,3 +568,21 @@
 //     }
 //   }
 // } while (clientes != -1);
+
+// Ejercicio 16
+// let n = new Array(20);
+// for (let i = 0; i < 20; i++) {
+//   n[i] = Math.round(Math.random() * 381) + 20;
+//   document.write(n[i] + "<br>");
+// }
+// document.write("\n\n¿Qué números quiere resaltar? <br>");
+// let opcion = parseInt(prompt("(1 – los múltiplos de 5, 2 – los múltiplos de 7): "));
+// let multiplo = (opcion == 1) ? 5 : 7;
+// // Muestra el resultado.
+// n.forEach((element) => {
+//   if (element % multiplo == 0) {
+//     document.write("[" + element + "] <br>");
+//   } else {
+//     document.write(element + "<br>");
+//   }
+// });
