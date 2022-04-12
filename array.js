@@ -586,3 +586,60 @@
 //     document.write(element + "<br>");
 //   }
 // });
+
+// Ejercicio 17
+// let n = new Array(10);
+// // Genera el array
+// for (let i = 0; i < 10; i++) {
+//   n[i] = Math.round(Math.random() * 381) + 20;
+// }
+// // Muestra el array original.
+// document.write("\n\nArray original:");
+// document.write("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
+// document.write("│ Índice ");
+// for (let i = 0; i < 10; i++) {
+//   document.write("│%4d ", i, "<br>");
+// }
+// document.write("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
+// document.write("│ Valor  ");
+// for (let i = 0; i < 10; i++) {
+//   document.write("│%4d ", n[i], "<br>");
+// }
+// document.write("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
+// // Pide un número que esté dentro del array
+// let existeNumero = false;
+// let numeroIntroducido;
+// do {
+//   numeroIntroducido = parseInt(prompt("\nIntroduzca uno de los números del array: "));
+//   // Comprueba si el número introducido se encuentra dentro del array
+//   n.forEach(function(element) {
+//     if (element == numeroIntroducido) {
+//       existeNumero = true;
+//     }
+//   });
+//   if (!existeNumero) {
+//     document.write("Ese número no se encuentra en el array.");
+//   }
+// } while ((!existeNumero) && (numeroIntroducido <= 5));
+// // Rota los el array hasta que el número introducido se coloque en la posición 0
+// while (n[0] != numeroIntroducido) {
+//   let aux = n[9];
+//   // Rotación a la derecha
+//   for (let i = 9; i > 0; i--) {
+//     n[i] = n[i -1];
+//   }
+//   n[0] = aux;
+// }
+// // Muestra el resultado.
+// document.write("\nArray resultante:");
+// document.write("\n┌────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐");
+// document.write("│ Índice ");
+// for (let i = 0; i < 10; i++) {
+//   document.write("│%4d ", i, "<br>");
+// }
+// document.write("│\n├────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤");
+// document.write("│ Valor  ");
+// for (let i = 0; i < 10; i++) {
+//   document.write("│%4d ", n[i], "<br>");
+// }
+// document.write("│\n└────────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘");
